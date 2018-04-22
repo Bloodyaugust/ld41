@@ -54,6 +54,10 @@ public class PlayerController : MonoBehaviour {
 		CenterCamera();
 	}
 
+	void OnCollisionEnter2D () {
+		_toolbox.PlayerDied.Invoke();
+	}
+
 	void SetAnimationState (PlayerStates animationState) {
 		_animationState = animationState;
 
@@ -70,9 +74,5 @@ public class PlayerController : MonoBehaviour {
 		_toolbox.PlayerMoveDouble.AddListener(MoveDouble);
 
 		SetAnimationState(PlayerStates.PLAYER_IDLE);
-	}
-
-	void Update () {
-
 	}
 }
