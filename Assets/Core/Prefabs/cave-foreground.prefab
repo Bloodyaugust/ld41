@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4423344047532968}
   - component: {fileID: 212466431472245068}
+  - component: {fileID: 114574799506669782}
   m_Layer: 0
   m_Name: cave-foreground
   m_TagString: Untagged
@@ -40,6 +41,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114574799506669782
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1014938565520936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a4862e6824172c4989c3dfaa3f767c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212466431472245068
 SpriteRenderer:
   m_ObjectHideFlags: 1

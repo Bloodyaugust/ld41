@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4977274075707528}
   - component: {fileID: 212247125859747808}
   - component: {fileID: 60236807335219952}
+  - component: {fileID: 114336866823778932}
   m_Layer: 0
   m_Name: stalagmite
   m_TagString: Untagged
@@ -74,6 +75,17 @@ PolygonCollider2D:
       - {x: 8, y: -16}
       - {x: 7.4524918, y: -9.942604}
       - {x: 5.631233, y: -4.5738373}
+--- !u!114 &114336866823778932
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1232564768023560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a4862e6824172c4989c3dfaa3f767c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212247125859747808
 SpriteRenderer:
   m_ObjectHideFlags: 1
