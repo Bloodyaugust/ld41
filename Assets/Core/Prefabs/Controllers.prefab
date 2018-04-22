@@ -64,6 +64,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 935586fdd316b490588b56069c2c3c3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CardPrefabs:
+  - {fileID: 1290582387443388, guid: a1a841be1cb398d4b97315c1f0a4c83d, type: 2}
+  - {fileID: 1618990198074512, guid: 7335259faece2394490d908232147c3d, type: 2}
+  - {fileID: 1069788360833884, guid: d7d797183a9004adeb4811082d5d47b4, type: 2}
+  - {fileID: 1507674715128262, guid: 4bc2353c6170bee47a8c036bbe56aaad, type: 2}
 --- !u!114 &114848495023790064
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -10,7 +10,8 @@ using UnityEngine.UI;
 public class Toolbox : Singleton<Toolbox> {
 	protected Toolbox () {}
 
-	public UnityEvent CardPlayed = new UnityEvent();
+	public CardPlayed CardPlayed = new CardPlayed();
+	public UnityEvent Discard = new UnityEvent();
 	public UnityEvent GenerateCaveChunk = new UnityEvent();
 	public UnityEvent PlayerCrouch = new UnityEvent();
 	public UnityEvent PlayerDied = new UnityEvent();

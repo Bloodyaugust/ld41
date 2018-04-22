@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CardMoveDouble : MonoBehaviour {
+public class TriggerCardPlayed : MonoBehaviour {
 	Toolbox _toolbox;
 
 	void OnMouseUp () {
-		_toolbox.PlayerMoveDouble.Invoke();
+		_toolbox.CardPlayed.Invoke(transform.position.x);
+
+		Destroy(gameObject);
 	}
 
 	void Start () {

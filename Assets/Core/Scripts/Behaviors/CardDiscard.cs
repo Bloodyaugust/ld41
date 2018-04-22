@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CardMoveDouble : MonoBehaviour {
+public class CardDiscard : MonoBehaviour {
 	Toolbox _toolbox;
 
 	void OnMouseUp () {
-		_toolbox.PlayerMoveDouble.Invoke();
+		_toolbox.Discard.Invoke();
 	}
 
 	void Start () {

@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212732062763503510}
   - component: {fileID: 61316535802433982}
   - component: {fileID: 114833452480314912}
+  - component: {fileID: 114246041048798746}
   m_Layer: 0
   m_Name: card-jump
   m_TagString: Card
@@ -67,6 +68,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 22, y: 32}
   m_EdgeRadius: 0
+--- !u!114 &114246041048798746
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1618990198074512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e655a48baa6c9e42906e87b510692a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114833452480314912
 MonoBehaviour:
   m_ObjectHideFlags: 1

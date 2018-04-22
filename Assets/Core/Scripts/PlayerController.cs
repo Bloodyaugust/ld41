@@ -31,6 +31,14 @@ public class PlayerController : MonoBehaviour {
 		_toolbox.PlayerMove.Invoke();
 	}
 
+	void Discard () {
+		SetAnimationState(PlayerStates.PLAYER_IDLE);
+		_player.transform.position = new Vector3(_player.transform.position.x, MOVE_FLOOR.y, 0);
+		_player.transform.Translate(MOVE);
+		CenterCamera();
+		_toolbox.PlayerMove.Invoke();
+	}
+
 	void Jump () {
 		_player.transform.position = new Vector3(_player.transform.position.x, MOVE_JUMP.y, 0);
 		SetAnimationState(PlayerStates.PLAYER_JUMP);
@@ -69,6 +77,7 @@ public class PlayerController : MonoBehaviour {
 		_player = GameObject.FindWithTag("Player");
 		_toolbox = Toolbox.Instance;
 
+		_toolbox.Discard.AddListener(Discard);
 		_toolbox.PlayerCrouch.AddListener(Crouch);
 		_toolbox.PlayerJump.AddListener(Jump);
 		_toolbox.PlayerMoveDouble.AddListener(MoveDouble);
