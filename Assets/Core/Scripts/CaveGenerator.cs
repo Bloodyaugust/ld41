@@ -24,7 +24,7 @@ public class CaveGenerator : MonoBehaviour {
 		for (int i = 0; i < numObstacles; i++) {
 			if (Random.value <= OBSTACLE_CHANCE) {
 				int prefabNum = Random.Range(0, ObstaclePrefabs.Length);
-				Instantiate(ObstaclePrefabs[prefabNum], new Vector3(_currentChunk * CHUNK_WIDTH + OBSTACLE_INTERVAL * i - CHUNK_WIDTH / 2, ObstaclePrefabs[prefabNum].transform.localPosition.y, 0), Quaternion.identity);
+				Instantiate(ObstaclePrefabs[prefabNum], new Vector3(_currentChunk * CHUNK_WIDTH + OBSTACLE_INTERVAL * i - CHUNK_WIDTH / 2, ObstaclePrefabs[prefabNum].transform.position.y, 0), Quaternion.identity);
 			}
 		}
 	}

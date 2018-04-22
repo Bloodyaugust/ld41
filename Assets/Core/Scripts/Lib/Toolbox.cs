@@ -9,7 +9,11 @@ using UnityEngine.SceneManagement;
 public class Toolbox : Singleton<Toolbox> {
 	protected Toolbox () {}
 
+	public UnityEvent CardPlayed = new UnityEvent();
 	public UnityEvent GenerateCaveChunk = new UnityEvent();
+	public UnityEvent PlayerCrouch = new UnityEvent();
+	public UnityEvent PlayerJump = new UnityEvent();
+	public UnityEvent PlayerMove = new UnityEvent();
 	public UnityEvent PlayerMoveDouble = new UnityEvent();
 
 	void Awake () {

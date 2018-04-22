@@ -78,5 +78,6 @@ MonoBehaviour:
   CaveBackgrounds:
   - {fileID: 1752260985891666, guid: e4a414f461d802441ab5b836ba712e90, type: 2}
   - {fileID: 1014938565520936, guid: 01d79fa59687faf4c9b31bd48b8a0daf, type: 2}
-  ItemPrefabs:
+  ObstaclePrefabs:
+  - {fileID: 1092771488036786, guid: d18c5f71287bf7246b30f3075e852cd4, type: 2}
   - {fileID: 1232564768023560, guid: 66b69c1874d9cde4085d6a174df010bf, type: 2}

@@ -7,7 +7,7 @@ public class DestroyAtDistance : MonoBehaviour {
 	Toolbox _toolbox;
 
 	void DetermineDestroy () {
-		if (Mathf.Abs(_player.transform.localPosition.x - gameObject.transform.localPosition.x) > CaveGenerator.CHUNK_WIDTH * 3) {
+		if (Mathf.Abs(_player.transform.position.x - gameObject.transform.position.x) > CaveGenerator.CHUNK_WIDTH * 3) {
 			Destroy(gameObject);
 		}
 	}
