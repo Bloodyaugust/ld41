@@ -9,65 +9,44 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1678209411051398}
+  m_RootGameObject: {fileID: 1232564768023560}
   m_IsPrefabParent: 1
---- !u!1 &1678209411051398
+--- !u!1 &1232564768023560
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4101876157703736}
-  - component: {fileID: 212439723146355080}
-  - component: {fileID: 50446878739765056}
-  - component: {fileID: 60568238411593562}
+  - component: {fileID: 4977274075707528}
+  - component: {fileID: 212247125859747808}
+  - component: {fileID: 60236807335219952}
   m_Layer: 0
-  m_Name: player
+  m_Name: stalagmite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4101876157703736
+--- !u!4 &4977274075707528
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1678209411051398}
+  m_GameObject: {fileID: 1232564768023560}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -14, z: 0}
+  m_LocalPosition: {x: 64, y: -14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50446878739765056
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1678209411051398}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 1
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!60 &60568238411593562
+--- !u!60 &60236807335219952
 PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1678209411051398}
+  m_GameObject: {fileID: 1232564768023560}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -78,31 +57,29 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 22, y: 32}
-    newSize: {x: 0.22, y: 0.32}
+    oldSize: {x: 16, y: 32}
+    newSize: {x: 0.16, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -3.0724454, y: 15.634994}
-      - {x: -6.072441, y: 9.981192}
-      - {x: -4.322278, y: 1.2116346}
-      - {x: -10.726244, y: -12.897463}
-      - {x: -4.3692102, y: -12.14637}
-      - {x: -2.9646964, y: -15.865715}
-      - {x: 5.070607, y: -15.73143}
-      - {x: 4.349313, y: -12.365177}
-      - {x: 10.087494, y: -12.897465}
-      - {x: 6.118069, y: 3.5131655}
-      - {x: 8.171218, y: 14.813736}
---- !u!212 &212439723146355080
+    - - {x: 3.7187195, y: 3.3537207}
+      - {x: 0.36123657, y: 8.718723}
+      - {x: -2.1825027, y: 4.429925}
+      - {x: -5.17498, y: -5.5775986}
+      - {x: -7.1787415, y: -13.493874}
+      - {x: -8, y: -16}
+      - {x: 8, y: -16}
+      - {x: 7.4524918, y: -9.942604}
+      - {x: 5.631233, y: -4.5738373}
+--- !u!212 &212247125859747808
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1678209411051398}
+  m_GameObject: {fileID: 1232564768023560}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -131,12 +108,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: cf37363d562384c2897a499417f96971, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fa1a8e3bd66c94941a9c53dd883fb604, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.22, y: 0.32}
+  m_Size: {x: 0.16, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
