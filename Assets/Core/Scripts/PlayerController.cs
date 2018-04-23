@@ -66,7 +66,10 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D () {
-		_audioSource.PlayOneShot(ClipPlayerDied, 0.5f);
+		if (!_toolbox.Muted) {
+			_audioSource.PlayOneShot(ClipPlayerDied, 0.5f);
+		}
+
 		_toolbox.PlayerDied.Invoke();
 	}
 

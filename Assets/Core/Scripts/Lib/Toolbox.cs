@@ -10,6 +10,7 @@ using UnityEngine.UI;
 public class Toolbox : Singleton<Toolbox> {
 	protected Toolbox () {}
 
+	public bool Muted = false;
 	public CardPlayed CardPlayed = new CardPlayed();
 	public UnityEvent Discard = new UnityEvent();
 	public UnityEvent GenerateCaveChunk = new UnityEvent();

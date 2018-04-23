@@ -20,7 +20,10 @@ public class CardController : MonoBehaviour {
 
 	void OnCardPlayed (float xPosition) {
 		GenerateCard(xPosition);
-		_audioSource.PlayOneShot(ClipCardPlayed, 0.5f);
+
+		if (!_toolbox.Muted) {
+			_audioSource.PlayOneShot(ClipCardPlayed, 0.5f);
+		}
 	}
 
 	void OnDiscard () {
@@ -32,7 +35,10 @@ public class CardController : MonoBehaviour {
 			Destroy(cards[i]);
 			GenerateCard(xPosition);
 		}
-		_audioSource.PlayOneShot(ClipCardPlayed, 0.5f);
+
+		if (!_toolbox.Muted) {
+			_audioSource.PlayOneShot(ClipCardPlayed, 0.5f);
+		}
 	}
 
 	void OnPlayerMove () {
