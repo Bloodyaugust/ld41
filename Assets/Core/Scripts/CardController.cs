@@ -7,8 +7,10 @@ using UnityEngine.Events;
 public class CardPlayed : UnityEvent<float>{}
 
 public class CardController : MonoBehaviour {
+	public AudioClip ClipCardPlayed;
 	public GameObject[] CardPrefabs;
 
+	AudioSource _audioSource;
 	Toolbox _toolbox;
 
 	void GenerateCard (float xPosition) {
@@ -18,6 +20,7 @@ public class CardController : MonoBehaviour {
 
 	void OnCardPlayed (float xPosition) {
 		GenerateCard(xPosition);
+		_audioSource.PlayOneShot(ClipCardPlayed, 0.5f);
 	}
 
 	void OnDiscard () {
@@ -29,6 +32,7 @@ public class CardController : MonoBehaviour {
 			Destroy(cards[i]);
 			GenerateCard(xPosition);
 		}
+		_audioSource.PlayOneShot(ClipCardPlayed, 0.5f);
 	}
 
 	void OnPlayerMove () {
@@ -48,6 +52,7 @@ public class CardController : MonoBehaviour {
 	}
 
 	void Start () {
+		_audioSource = GetComponent<AudioSource>();
 		_toolbox = Toolbox.Instance;
 
 		_toolbox.CardPlayed.AddListener(OnCardPlayed);

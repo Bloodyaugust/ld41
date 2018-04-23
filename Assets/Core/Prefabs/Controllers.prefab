@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 114229481500972956}
   - component: {fileID: 114198770250611048}
   - component: {fileID: 114848495023790064}
+  - component: {fileID: 82496269093357960}
   m_Layer: 0
   m_Name: Controllers
   m_TagString: Untagged
@@ -42,6 +43,86 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &82496269093357960
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1795364731278078}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!114 &114198770250611048
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53,6 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6101800de6a4044caff4a01960e1f33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ClipPlayerDied: {fileID: 0}
 --- !u!114 &114229481500972956
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -64,6 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 935586fdd316b490588b56069c2c3c3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ClipCardPlayed: {fileID: 8300000, guid: 0ffa192586d3c204e923960d2be31297, type: 3}
   CardPrefabs:
   - {fileID: 1290582387443388, guid: a1a841be1cb398d4b97315c1f0a4c83d, type: 2}
   - {fileID: 1618990198074512, guid: 7335259faece2394490d908232147c3d, type: 2}
@@ -86,3 +169,4 @@ MonoBehaviour:
   ObstaclePrefabs:
   - {fileID: 1092771488036786, guid: d18c5f71287bf7246b30f3075e852cd4, type: 2}
   - {fileID: 1232564768023560, guid: 66b69c1874d9cde4085d6a174df010bf, type: 2}
+  - {fileID: 1298842665806322, guid: 3d50c50fb859e6345a215b7d8872c47e, type: 2}

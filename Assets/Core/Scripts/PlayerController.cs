@@ -9,12 +9,15 @@ enum PlayerStates {
 }
 
 public class PlayerController : MonoBehaviour {
+	public AudioClip ClipPlayerDied;
+
 	public static Vector3 MOVE = new Vector3(16, 0, 0);
 	public static Vector3 MOVE_DOUBLE = new Vector3(32, 0, 0);
 	public static Vector3 MOVE_JUMP = new Vector3(0, 12, 0);
 	public static Vector3 MOVE_FLOOR = new Vector3(0, -14, 0);
 
 	Animator _animator;
+	AudioSource _audioSource;
 	GameObject _player;
 	PlayerStates _animationState;
 	Toolbox _toolbox;
@@ -63,6 +66,7 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D () {
+		_audioSource.PlayOneShot(ClipPlayerDied, 0.5f);
 		_toolbox.PlayerDied.Invoke();
 	}
 
@@ -74,6 +78,7 @@ public class PlayerController : MonoBehaviour {
 
 	void Start () {
 		_animator = GetComponent<Animator>();
+		_audioSource = GetComponent<AudioSource>();
 		_player = GameObject.FindWithTag("Player");
 		_toolbox = Toolbox.Instance;
 
